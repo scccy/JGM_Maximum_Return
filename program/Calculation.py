@@ -140,7 +140,7 @@ class Calculation(object):
         print('升级优先级',
               np.round([x * self.startDict[self.star[Rec.builds[0][i // 3][i % 3]]] for i, x in enumerate(Rec.builds[1])], 2))
 
-    def mian(self):
+    def main(self):
         result = comb(len(self.commercial), 3) * comb(len(self.industry), 3) * comb(len(self.residence), 3)
         print('Total iterations:', result)
         for item in tqdm(itertools.product(itertools.combinations(self.commercial, 3),

@@ -17,10 +17,7 @@ if __name__ == '__main__':
     Photos_Commercial = input("画册商业buff:", )
     Photos_Industry = input("画册工业buff:", )
 
-    states = States.Buff(Policy_Global, Policy_Online, Policy_Offline, Policy_Residence,Policy_Commercial,Policy_Industry,
-                Policy_JiaGuoZhiGuang, Photos_Global, Photos_Online, Photos_Offline, Photos_Residence, Photos_Commercial,
-                Photos_Industry)
-
-    Calculation()
-
-
+    # states = States.Buff(Policy_Global, Policy_Online, Policy_Offline, Policy_Residence,Policy_Commercial,Policy_Industry,
+    #             Policy_JiaGuoZhiGuang, Photos_Global, Photos_Online, Photos_Offline, Photos_Residence, Photos_Commercial,
+    #             Photos_Industry)
+    a = Calculation().main()
