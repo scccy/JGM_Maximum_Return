@@ -55,7 +55,7 @@ class main(object):
     Photos_Offline = ''
     Photos_Residence = ''
     Photos_Commercial = ''
-    hotos_Industry = ''
+    Photos_Industry = ''
     OneStars = ''.split()
     TwoStars = ''.split()
     TriStars = ''.split()
