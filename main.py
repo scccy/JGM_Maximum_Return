@@ -3,7 +3,7 @@ from program import States
 
 
 if __name__ == '__main__':
-    Policy_Global = input("政策全球政策:", )
+    Policy_Global = input("全球政策:", )
     Policy_Online = input("政策在线buff:", )
     Policy_Offline = input("政策离线buff:", )
     Policy_Residence = input("政策住宅buff:", )
