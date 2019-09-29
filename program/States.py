@@ -43,10 +43,6 @@ from collections import defaultdict
 
 
 class Buff(object):
-
-    commercial = '便利店 五金店 服装店 菜市场 学校 图书城 商贸中心 加油站 民食斋 媒体之声'
-    residence = '木屋 居民楼 钢结构房 平房 小型公寓 人才公寓 花园洋房 中式小楼 空中别墅 复兴公馆'
-    industry = '木材厂 食品厂 造纸厂 水厂 电厂 钢铁厂 纺织厂 零件厂 企鹅机械 人民石油'
     Policy = defaultdict(list)
     Photos = defaultdict(list)
 
@@ -89,9 +85,18 @@ class Buff(object):
         self.Photos['Residence'] = self.Photos_Residence
         self.Photos['Commercial'] = self.Photos_Commercial
         self.Photos['Industry'] = self.Photos_Industry
-        return self.Policy
+        return self.Policy, self.Photos
 
-a = Buff()
-a.Policy_Global = 1
-Policy =a.dick()
-print(Policy)
+
+class Building(object):
+
+    commercial = ['便利店', '五金店' '服装店', '菜市场', '学校', '图书城', '商贸中心', '加油站', '民食斋', '媒体之声']
+    residence = ['木屋', '居民楼', '钢结构房', '平房', '小型公寓', '人才公寓', '花园洋房', '中式小楼', '空中别墅', '复兴公馆']
+    industry = ['木材厂', '食品厂', '造纸厂', '水厂', '电厂', '钢铁厂','纺织厂', '零件厂', '企鹅机械', '人民石油']
+
+    def __init__(self):
+        self.OneStars = ''.split()
+        self.TwoStars = ''.split()
+        self.TriStars = ''.split()
+        self.QuaStars = ''.split()
+        self.PenStars = ''.split()

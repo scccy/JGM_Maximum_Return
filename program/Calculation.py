@@ -20,26 +20,41 @@ class Result(object):
 
 
 class Calculation(object):
+
+    def __int__(self, policy, photos):
+        self.Policy = policy
+        self.Photos = photos
+        pass
+
     startDict = {1: 1, 2: 2, 3: 6, 4: 24, 5: 120}
     star = dict()
     start = dict()
     results = PQ()
     cdict = dict()
     '''
-    取值BUFF
+    取值&BUFF
     '''
-    States = States.Buff()
+    states = States.Buff()
+    stars = States.Building()
     Item = Buff_List.Item()
-    OneStars = States.OneStars
-    TwoStars = States.TwoStars
-    TriStars = States.TriStars
-    QuaStars = States.QuaStars
-    PenStars = States.PenStars
-    Policy = States.Policy
-    Photos = States.Photos
-    residence = States.residence
-    commercial = States.commercial
-    industry = States.industry
+
+    #星级
+    OneStars = stars.OneStars
+    TwoStars = stars.TwoStars
+    TriStars = stars.TriStars
+    QuaStars = stars.QuaStars
+    PenStars = stars.PenStars
+
+    #政策
+    Policy = states.Policy
+
+    #画册
+    Photos = states.Photos
+
+    #建筑列表
+    residence = stars.residence
+    commercial = stars.commercial
+    industry = stars.industry
 
     '''
     调整基础数据
