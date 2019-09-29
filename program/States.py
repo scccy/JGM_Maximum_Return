@@ -76,19 +76,19 @@ class Buff(object):
 
     def dick(self):
         self.Policy['Global'] = self.Policy_Global
-        # self.Policy['Online'] = self.Policy_Online
-        # self.Policy['Offline'] = self.Policy_Offline
-        # self.Policy['Residence'] = self.Policy_Residence
-        # self.Policy['Commercial'] = self.Policy_Commercial
-        # self.Policy['Industry'] = self.Policy_Industry
-        # self.Policy['JiaGuoZhiGuang'] = self.Policy_JiaGuoZhiGuang
-        #
-        # self.Photos['Global'] = self.Photos_Global
-        # self.Photos['Online'] = self.Photos_Online
-        # self.Photos['Offline'] = self.Photos_Offline
-        # self.Photos['Residence'] = self.Photos_Residence
-        # self.Photos['Commercial'] = self.Photos_Commercial
-        # self.Photos['Industry'] = self.Photos_Industry
+        self.Policy['Online'] = self.Policy_Online
+        self.Policy['Offline'] = self.Policy_Offline
+        self.Policy['Residence'] = self.Policy_Residence
+        self.Policy['Commercial'] = self.Policy_Commercial
+        self.Policy['Industry'] = self.Policy_Industry
+        self.Policy['JiaGuoZhiGuang'] = self.Policy_JiaGuoZhiGuang
+
+        self.Photos['Global'] = self.Photos_Global
+        self.Photos['Online'] = self.Photos_Online
+        self.Photos['Offline'] = self.Photos_Offline
+        self.Photos['Residence'] = self.Photos_Residence
+        self.Photos['Commercial'] = self.Photos_Commercial
+        self.Photos['Industry'] = self.Photos_Industry
         return self.Policy
 
 a = Buff()
