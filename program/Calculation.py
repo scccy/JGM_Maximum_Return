@@ -41,13 +41,6 @@ class Calculation(object):
     commercial = States.commercial
     industry = States.industry
 
-
-    def __lt__(self, other):
-        return self.priority < other.priority
-
-    def __eq__(self, other):
-        return self.priority == other.priority
-
     '''
     调整基础数据
     '''
