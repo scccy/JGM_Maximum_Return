@@ -146,10 +146,10 @@ for item in industry:#工业
         (1+Policy['Global']+Policy['Online']+Policy['Industry']+Policy['JiaGuoZhiGuang'])*\
         (1+Photos['Global']+Photos['Online']+Photos['Industry'])
 
-
+print(start)
 #收益调整
-start['平房'] *= 1.1
-start['民食斋'] *= 1.52
+# start['平房'] *= 1.1
+# start['民食斋'] *= 1.52
 
 #任务加成调整
 #start['小型公寓'] *= 2
@@ -159,13 +159,13 @@ start['民食斋'] *= 1.52
 
 #start['纺织厂'] *= 2.5
 #start['木材厂'] *= 2
-start['食品厂'] *= 2
-start['电厂'] *= 2.5
-#start['菜市场'] *= 2
+# start['食品厂'] *= 2
+# start['电厂'] *= 2.5
+# start['菜市场'] *= 2
 
 #start['商贸中心'] *= 2
 # start['服装店'] *= 2
-start['造纸厂'] *= 2
+# start['造纸厂'] *= 2
 
 #start['民食斋'] *= 2
 # start['钢铁厂'] *= 3
@@ -211,9 +211,6 @@ print('Total iterations:', comb(len(commercial), 3)*comb(len(industry), 3)*comb(
 
 for item in tqdm(itertools.product(itertools.combinations(commercial, 3), itertools.combinations(industry, 3), itertools.combinations(residence, 3))):
     prod = calculateComb(item)
-#    if prod > Max:
-#        print('\n', prod, item)
-#        Max = prod
     results.put(Result(-prod[0], (item, prod[1])))
     pass
 
