@@ -9,12 +9,13 @@ from tqdm import tqdm
 import itertools
 from queue import PriorityQueue as PQ
 from scipy.special import comb
+from collections import defaultdict as ddict
 
 Mode = 'Online'
 
 commercial = '便利店 五金店 服装店 菜市场 学校 图书城 商贸中心 加油站 民食斋 媒体之声'
 residence = '木屋 居民楼 钢结构房 平房 小型公寓 人才公寓 花园洋房 中式小楼 空中别墅 复兴公馆'
-industry = '木材厂 食品厂 造纸厂 水厂 电厂 钢铁厂 纺织厂 零件厂 企鹅机械 人民石油'
+industry  = '木材厂 食品厂 造纸厂 水厂 电厂 钢铁厂 纺织厂 零件厂 企鹅机械 人民石油'
 
 OneStars = ' 零件厂 民食斋 中式小楼 人民石油 商贸中心 花园洋房 空中别墅 媒体之声 复兴公馆'
 TwoStars = ' 企鹅机械 图书城 加油站'
@@ -81,7 +82,7 @@ for item in PenStars:
 
 startDict = {1:1, 2:2, 3:6, 4:24, 5:120}
 
-start = dict()
+start = ddict(int)
 for item in residence:#住宅
     start[item] = startDict[star[item]]*\
         (1+Policy['Global']+Policy['Online']+Policy['Residence']+Policy['JiaGuoZhiGuang'])*\

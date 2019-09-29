@@ -103,7 +103,6 @@ class Calculation(object):
                 [v * results[i] / self.startDict[self.star[buildtuple[i]]] for i, v in enumerate(starts)])
 
 
-
     def bset(self):
         print('==============')
         Rec = self.results.get()
