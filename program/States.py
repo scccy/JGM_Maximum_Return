@@ -63,12 +63,6 @@ class Buff(object):
         self.Photos_Residence = '1'
         self.Photos_Commercial = '1'
         self.Photos_Industry = '1'
-        #
-        # self.OneStars = ''.split()
-        # self.TwoStars = ''.split()
-        # self.TriStars = ''.split()
-        # self.QuaStars = ''.split()
-        # self.PenStars = ''.split()
 
     def dick(self):
         self.Policy['Global'] = self.Policy_Global
